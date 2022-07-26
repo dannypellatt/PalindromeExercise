@@ -6,7 +6,9 @@ namespace PalindromeExercise
     {
         public bool IsAPalindrome(string word)
         {
-            return word.ToLower().SequenceEqual(word.ToLower().Reverse());
+            
+
+            return word == null || word.Length == 0 ? false : word.ToLower().SequenceEqual(word.ToLower().Reverse());
         }
     }
 }
